@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenith Z - Electric Revolution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo">Zenith</a>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>The Electric Revolution Starts Now. Introducing the Zenith Z.</h1>
+        <p>Experience the future of driving. Sustainable, powerful, and designed for you.</p>
+        <button class="primary-btn">Reserve Your Zenith Z Today</button>
+        <button class="secondary-btn">Learn More About the Zenith Z</button>
+        <div class="car-image">
+          <img src="images/zenith-z.jpg" alt="Zenith Z Electric Car" id="car-spin">
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2>Unleash the Power of Electric</h2>
+        <div class="feature-cards">
+          <div class="card">
+            <h3>Unmatched Range</h3>
+            <p>Drive farther on a single charge than ever before.</p>
+          </div>
+          <div class="card">
+            <h3>Thrilling Performance</h3>
+            <p>Experience instant acceleration and exhilarating power.</p>
+          </div>
+          <div class="card">
+            <h3>Sustainable Design</h3>
+            <p>Drive with confidence knowing you're making a difference.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="container">
+        <h2>See the Zenith Z in Action</h2>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <button class="primary-btn">Reserve Your Zenith Z Today</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Zenith Motors. All Rights Reserved.</p>
+      <ul class="social-media">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const carImage = document.getElementById('car-spin');
+    let rotation = 0;
+
+    setInterval(() => {
+      rotation++;
+      carImage.style.transform = `rotateY(${rotation}deg)`;
+    }, 50);
+  </script>
+</body>
+</html>
